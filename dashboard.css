@@ -20,15 +20,17 @@ body {
   display: grid;
   height: 100vh;
   width: 100%;
-  grid-template: 1fr 1fr / 22% 3fr;
+  grid-template: 1fr 3fr / 20% 3fr;
 }
 .sidebar {
   grid-row: 1/3;
-  background-color: green;
+  background-color: #6C698D;
 }
 .header {
   grid-column: 2/3;
-  background-color: salmon;
+  background-color: #D4D2D5;
+  display: grid;
+  grid-template-rows: 1fr/2fr;
 }
 .subContainer {
   grid-area: 2/2/3/3;
@@ -36,9 +38,7 @@ body {
 }
 /*Working on the sidebar now*/
 .sidebar {
-  padding: 40px;
-  border-color: black;
-  border: 10px solid;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -47,13 +47,54 @@ body {
   color: white;
 }
 .sTitle {
-  font-family: Britney;
+  font-family: Quicksand;
   font-size: 40px;
 
 }
 .sContent1,
 .sContent2 {
   font-family: Quicksand;
-  font-size: 28px;
+  font-size: 25px;
   font-variation-settings: "wght" 500;  
 }
+/*Working now on the header and elements*/
+.header{
+  display: grid;
+  grid-template-rows: 1fr/3fr;
+  padding-left: 35px;
+}
+
+.search{
+  display: flex; 
+  justify-content: left; 
+  align-items: center;
+  gap: 20px;
+}
+#searchQuery{
+  border: 2px solid #AA968A  ;
+  border-radius: 40px;
+  width: 600px;
+  height: 40px;
+  background-color: #AA968A;
+  box-shadow: -65px 0px #B5A398;
+  padding-left: 40px;
+  font-size: 22px;
+}
+#searchQuery:focus{
+  border-style: none;
+  border: 0px white;
+}
+
+.searchImg{
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.bell{
+  justify-self: flex-end;
+  width: 40px;
+  height: 40px;
+  position: relative;  
+}
+
+
