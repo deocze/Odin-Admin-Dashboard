@@ -87,11 +87,10 @@ h2 {
 /*Working now on the header and elements*/
 .header {
   display: grid;
-  grid-template-rows: 60px/3fr;
-  padding-left: 60px;
-  padding-top: 18px;
+  grid-template-rows: 60px/1fr;
+  padding: 18px 60px;
 }
-.search {
+.header1 {
   display: grid;
   grid-template-columns: 60px 1fr 25%;
   align-items: center;
@@ -99,16 +98,12 @@ h2 {
 #searchQuery {
   border-style: none;
   border-radius: 40px;
-  width: 85%;
+  width: 95%;
   height: 40px;
   margin-left: 20px;
   background-color: #a4a4a4;
   padding-left: 40px;
   font-size: 22px;
-}
-#searchQuery:enabled {
-  border-style: none;
-  border: 0px white;
 }
 
 .searchImg {
@@ -127,8 +122,20 @@ h2 {
   border-radius: 200px;
 }
 .miniProfile{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(2, 60px) 150px;
+  align-content: center;
+  justify-content: end;
+  place-items: center;
+  gap: 10px;
+}
+.username{
+  font-family: quicksand;
+  font-size: 20px;
+  font-variation-settings: "wght" 500;  
+}
+.header2{
+  display: grid;
+  /* grid-template-columns: 200px 1fr ; */
 }
