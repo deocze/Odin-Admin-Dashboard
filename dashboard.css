@@ -26,12 +26,7 @@ body {
   grid-row: 1/3;
   background-color: #304d6d;
 }
-.header {
-  grid-column: 2/3;
-  background-color: #f9f7f3;
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-}
+
 .subContainer {
   grid-area: 2/2/3/3;
   background-color: khaki;
@@ -87,8 +82,9 @@ h2 {
 /*Working now on the header and elements*/
 .header {
   display: grid;
-  grid-template-rows: 60px/1fr;
-  padding: 18px 60px;
+  grid-template-rows: 60px 100px;
+  gap: 30px;
+  padding: 18px 60px 25px 60px;
 }
 .header1 {
   display: grid;
@@ -116,12 +112,12 @@ h2 {
   width: 40px;
   height: 40px;
 }
-.pfp{
+.pfp {
   width: 50px;
-  height:50px;
+  height: 50px;
   border-radius: 200px;
 }
-.miniProfile{
+.miniProfile {
   display: grid;
   width: 95%;
   grid-template-columns: repeat(2, 60px) 150px;
@@ -130,12 +126,80 @@ h2 {
   place-items: center;
   gap: 10px;
 }
-.username{
+.username {
   font-family: quicksand;
   font-size: 20px;
-  font-variation-settings: "wght" 500;  
+  font-variation-settings: "wght" 600;
 }
-.header2{
+/*Doing the part under the search bar now in the header*/
+
+.header2 {
   display: grid;
-  /* grid-template-columns: 200px 1fr ; */
+  grid-template-columns: 135px 1fr repeat(3, 180px);
+}
+.pfp2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+}
+.greetingContainer {
+  align-self: end;
+}
+.greeting {
+  font-family: quicksand;
+  font-size: 28px;
+  font-variation-settings: "wght" 600;
+}
+.greeting2 {
+  font-family: quicksand;
+  font-size: 36px;
+  font-variation-settings: "wght" 600;
+}
+.butt {
+  font-family: quicksand;
+  font-size: 21px;
+  font-variation-settings: "wght" 800;
+  background-color: #0078d4;
+  color: white;
+  border-style: none;
+  border-radius: 40px;
+  padding: 10px 45px;
+  align-self: center;
+  justify-self: center;
+}
+/*Doing the sub container now*/
+
+.subContainer {
+  display: grid;
+  grid-template: 1fr 1fr/3fr 1fr;
+  background-color: hsl(0, 0%, 85%);
+}
+.projectContainer {
+  display: grid;
+  grid-row: 1/-1;
+  padding: 15px 50px 15px 15px;
+  gap: 20px;
+  grid-template: 20px repeat(3, 1fr) / repeat(2, 1fr);
+}
+.project {
+  background-color: white;
+  padding: 10px 60px 10px 10px;
+  box-shadow:
+    #54428e -10px 0px,
+    rgba(113, 112, 112, 0.675) 0px 4px 10px;
+    
+}
+.project > h3 {
+  font-size: 25px;
+  margin: 5px 5px 5px 0px;
+  font-family: quicksand;  
+}
+.project > p{
+  margin: 0px;
+  font-size: 15px;
+  font-family: quicksand;  
+}
+.projectHeading{
+  grid-column: 1/span 2;
+  font-family: quicksand;
 }

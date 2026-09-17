@@ -1,70 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet" />
     <script src="dashboard.js" defer></script>
-</head>
-<body>
-    <div class= "mainContainer">
-        <div class= "sidebar">
-            <div class="sTitle">
-                <img src="Images/sidebar_icons/icons8-dashboard-48.png" alt="Dashboard_Image">                
-                <h1>Dashboard</h1>
-            </div>
-            <div class="sContent1">
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-home-50.png" alt="An image of a house">
-                <h2>Home</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-profile-26.png" alt="An image of a blank profile">
-                <h2>Profile</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-speech-bubble-26.png" alt="An image of a message bubble">
-                <h2>Messages</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-clock-52.png" alt="An image of a clock">
-                <h2>History</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-to-do-list-52.png" alt="An image of a to-do list">
-                <h2>Tasks</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-community-52.png" alt="An image of a group of people">
-                <h2>Communities</h2>
-            </div>
-            <div class="sContent2">
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-gear-52.png" alt="An image of a house">                
-                <h2>Settings</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-support-52.png" alt="An image of a house">                
-                <h2>Support</h2>
-                <img class = "subIcons" src="Images/sidebar_icons/icons8-user-shield-52.png" alt="An image of a house">                
-                <h2>Privacy</h2>
-            </div>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="sidebar">
+        <div class="sTitle">
+          <img
+            src="Images/sidebar_icons/icons8-dashboard-48.png"
+            alt="Dashboard_Image"
+          />
+          <h1>Dashboard</h1>
         </div>
-        <div class= "header">
-            <div class="header1">
-                    <img class="searchImg" src="Images/header_icons/icons8-magnifying-glass-52.png" alt="Magnifying Glass">
-                    <input id = "searchQuery" name="searchQuery" class="text">
-                <div class="miniProfile">
-                    <img class ="bell" src="Images/header_icons/notification-bell-ring-1.png" alt="Notifcation Bell">               
-                        <img class= "pfp" src="Images/header_icons/Walta.jpg" alt="Your Profile Picture">
-                        <div class="username">Walter White</div>
-                </div>                    
-            </div>
-            <div class="header2">
-                    <img class= "pfp" src="Images/header_icons/Walta.jpg" alt="Your Profile Picture">
-                    <div class= "greetingContainer">
-                        <div div= "greeting">Hi there,</div>
-                        <div div= "greeting2">Walter White (@WaltWhite)</div>                   
-                    </div>                        
-                    <button type="button" id="new">New</button>
-                    <button type="button" id="upload">Upload</button>
-                    <button type="button" id="share">Share</button>
-            </div>
+        <div class="sContent1">
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-home-50.png"
+            alt="An image of a house"
+          />
+          <h2>Home</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-profile-26.png"
+            alt="An image of a blank profile"
+          />
+          <h2>Profile</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-speech-bubble-26.png"
+            alt="An image of a message bubble"
+          />
+          <h2>Messages</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-clock-52.png"
+            alt="An image of a clock"
+          />
+          <h2>History</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-to-do-list-52.png"
+            alt="An image of a to-do list"
+          />
+          <h2>Tasks</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-community-52.png"
+            alt="An image of a group of people"
+          />
+          <h2>Communities</h2>
         </div>
-        <div class="subContainer">
-            <div class= "projectContainer"></div>
-            <div class= "announcements"></div>
-            <div class= "trending"></div> 
+        <div class="sContent2">
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-gear-52.png"
+            alt="An image of a house"
+          />
+          <h2>Settings</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-support-52.png"
+            alt="An image of a house"
+          />
+          <h2>Support</h2>
+          <img
+            class="subIcons"
+            src="Images/sidebar_icons/icons8-user-shield-52.png"
+            alt="An image of a house"
+          />
+          <h2>Privacy</h2>
         </div>
-
+      </div>
+      <div class="header">
+        <div class="header1">
+          <img
+            class="searchImg"
+            src="Images/header_icons/icons8-magnifying-glass-52.png"
+            alt="Magnifying Glass"
+          />
+          <input id="searchQuery" name="searchQuery" class="text" />
+          <div class="miniProfile">
+            <img
+              class="bell"
+              src="Images/header_icons/notification-bell-ring-1.png"
+              alt="Notifcation Bell"
+            />
+            <img
+              class="pfp"
+              src="Images/header_icons/Walta.jpg"
+              alt="Your Profile Picture"
+            />
+            <div class="username">Walter White</div>
+          </div>
+        </div>
+        <div class="header2">
+          <img
+            class="pfp2"
+            src="Images/header_icons/Walta.jpg"
+            alt="Your Profile Picture"
+          />
+          <div class="greetingContainer">
+            <div class="greeting">Hi there,</div>
+            <div class="greeting2">Walter White (@WaltWhite)</div>
+          </div>
+          <button type="button" class="butt">New</button>
+          <button type="button" class="butt">Upload</button>
+          <button type="button" class="butt">Share</button>
+        </div>
+      </div>
+      <div class="subContainer">
+        <div class="projectContainer">
+          <h2 class="projectHeading">Your Projects</h2>
+          <div class="project">
+            <div class="projectcontent">
+              <h3>Super Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="projectIcons"></div>
+          </div>
+          <div class="project">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="announcements"></div>
+        <div class="trending"></div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
