@@ -171,35 +171,49 @@ h2 {
 
 .subContainer {
   display: grid;
-  grid-template: 1fr 1fr/3fr 1fr;
+  grid-template-columns:2.8fr 1fr;
   background-color: hsl(0, 0%, 85%);
 }
 .projectContainer {
   display: grid;
-  grid-row: 1/-1;
   padding: 15px 50px 15px 15px;
-  gap: 20px;
+  gap: 30px;
   grid-template: 20px repeat(3, 1fr) / repeat(2, 1fr);
 }
 .project {
   background-color: white;
-  padding: 10px 60px 10px 10px;
+  padding: 10px 20px 10px 10px;
   box-shadow:
     #54428e -10px 0px,
     rgba(113, 112, 112, 0.675) 0px 4px 10px;
-    
+  margin-left: 10px;
+  display: grid;
+  grid-template-rows: 1fr 40px;
 }
-.project > h3 {
+/*Testing*/
+.projectContent > h3 {
   font-size: 25px;
   margin: 5px 5px 5px 0px;
-  font-family: quicksand;  
+  font-family: quicksand;
 }
-.project > p{
+.projectContent > p {
   margin: 0px;
   font-size: 15px;
-  font-family: quicksand;  
-}
-.projectHeading{
-  grid-column: 1/span 2;
   font-family: quicksand;
+}
+.projectHeading {
+  grid-column: 1 / span 2;
+  font-family: quicksand;
+}
+.projectIcons {
+  justify-self: end;
+}
+.projectIcons > img {
+  height: 30px;
+  width: 30px;
+  margin: 0px 12px;
+}
+.miscContainer{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
