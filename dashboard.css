@@ -11,6 +11,7 @@
     format(ttf);
 }
 body {
+  overflow: hidden;
   margin: 0;
   min-height: 100vh;
   width: 100%;
@@ -171,7 +172,7 @@ h2 {
 
 .subContainer {
   display: grid;
-  grid-template-columns:2.8fr 1fr;
+  grid-template-columns: 2.8fr 1fr;
   background-color: hsl(0, 0%, 85%);
 }
 .projectContainer {
@@ -189,6 +190,7 @@ h2 {
   margin-left: 10px;
   display: grid;
   grid-template-rows: 1fr 40px;
+  border-radius: 8px;
 }
 /*Testing*/
 .projectContent > h3 {
@@ -211,9 +213,40 @@ h2 {
 .projectIcons > img {
   height: 30px;
   width: 30px;
-  margin: 0px 12px;
+  margin: 0px 10px;
 }
-.miscContainer{
+
+/*Doing the announcements and trending tabs*/
+.miscContainer {
+  padding: 15px 50px 15px 15px;
+  font-family: quicksand;
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+.announcements {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  padding-bottom: 50px;
+}
+.announcementsContainer {
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(113, 112, 112, 0.675) 0px 4px 10px;
+}
+.project,
+.announcementsContainer {
+  border-radius: 8px;
+}
+.announcementsContainer > h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.announcementsContainer > p {
+  font-size: 15px;
+  opacity: 80%;
+  margin: 0px;
+}
+
+.announcementsContainer h3:first-child {
+  margin-top: 0px;
 }
