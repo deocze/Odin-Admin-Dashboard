@@ -10,14 +10,17 @@
     url(Fonts/FontshareKit-2609001022/Quicksand/Fonts/TTF/Quicksand-Variable.ttf),
     format(ttf);
 }
+* {
+  box-sizing: border-box;
+}
 body {
-  overflow: hidden;
   margin: 0;
   min-height: 100vh;
   width: 100%;
+  height: 100%;
 }
-
 .mainContainer {
+  /* overflow: clip; */
   display: grid;
   height: 100vh;
   width: 100%;
@@ -168,7 +171,7 @@ h2 {
   align-self: center;
   justify-self: center;
 }
-/*Doing the sub container now*/
+/*Doing the sub container now with the project*/
 
 .subContainer {
   display: grid;
@@ -192,7 +195,6 @@ h2 {
   grid-template-rows: 1fr 40px;
   border-radius: 8px;
 }
-/*Testing*/
 .projectContent > h3 {
   font-size: 25px;
   margin: 5px 5px 5px 0px;
@@ -221,20 +223,23 @@ h2 {
   padding: 15px 50px 15px 15px;
   font-family: quicksand;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.2fr;
+  gap: 20px;
 }
 .announcements {
   display: grid;
   grid-template-rows: 50px 1fr;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
-.announcementsContainer {
+.announcementsContainer,
+.profileContainer {
   background-color: white;
   padding: 20px;
   box-shadow: rgba(113, 112, 112, 0.675) 0px 4px 10px;
 }
 .project,
-.announcementsContainer {
+.announcementsContainer,
+.profileContainer {
   border-radius: 8px;
 }
 .announcementsContainer > h3 {
@@ -246,7 +251,22 @@ h2 {
   opacity: 80%;
   margin: 0px;
 }
-
 .announcementsContainer h3:first-child {
   margin-top: 0px;
+}
+.profileContainer h3,.profileContainer p{
+  margin: 0px;
+}
+.profileContainer{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.profile{
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+}
+.profile img{
+  height: 30px;
+  width: 30px;
+  border-radius: 200px;
 }
